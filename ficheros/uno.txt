@@ -1,0 +1,6 @@
+uno,manuel,1
+dos,luisa,2
+tres,pepa,1
+cuatro,pepe,1
+cinco,jacinto,1
+seis,felipe,2
