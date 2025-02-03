@@ -11,7 +11,7 @@ public class Ejemplo1 {
         try {
             scanner = new Scanner(new File("ficheros/uno.txt"));
             System.out.println("sin problema en la lectura del fichero");
-            reportarFichero(scanner);
+           //reportarFichero(scanner);
             crearCiclo(scanner, dam);
             System.out.println(dam.getAlumnos());
         } catch (FileNotFoundException e) {
@@ -19,6 +19,7 @@ public class Ejemplo1 {
            // throw new RuntimeException(e);
             //e.printStackTrace();
         } finally {
+            System.out.println("entrando el bloque finally");
             if (scanner != null) {
                 System.out.println("cerrando scanner");
                 scanner.close();
