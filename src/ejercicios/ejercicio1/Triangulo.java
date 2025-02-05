@@ -20,4 +20,8 @@ public class Triangulo {
     public static Triangulo getInstance(int lado1, int lado2, int lado3) throws TrianguloException {
         return new Triangulo(lado1, lado2, lado3);
     }
+    //metodo que calcule el perimetro
+    public int getPerimetro () {
+        return lado1 + lado2 + lado3;
+    }
 }
