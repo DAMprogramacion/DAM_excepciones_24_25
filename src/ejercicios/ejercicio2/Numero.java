@@ -1,5 +1,7 @@
 package ejercicios.ejercicio2;
 
+import java.util.List;
+
 public class Numero {
     private SistemaNumerico sistemaNumerico;
     private String valor;
@@ -68,6 +70,14 @@ public class Numero {
         for (int i = 0; i < valorReverse.length(); i++) {
             if (valorReverse.charAt(i) == '1')
                 suma += (int) Math.pow(2, i);
+        }
+        return suma;
+    }
+
+    public static int calcularSumaDecimal(List<Numero> numeros) {
+        var suma = 0;   //var infiere tipos (averigua)
+        for (Numero numero : numeros) {
+            suma += numero.calcularValorDecimal();
         }
         return suma;
     }
